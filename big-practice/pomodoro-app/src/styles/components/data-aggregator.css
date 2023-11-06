@@ -1,0 +1,27 @@
+.data-aggregator {
+  margin-top: 28px;
+  margin-bottom: 50px;
+}
+
+.data-aggregator-container {
+  gap: 16px;
+  padding: 25px 12px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--fs-medium);
+  background-color: var(--overlay-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.number-data {
+  margin-left: 5px;
+}
+
+.hour-data {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.data-aggregator-pomodoro {
+  font-size: 24px;
+  font-weight: var(--fw-extrabold);
+  color: var(--primary-text-color);
+}

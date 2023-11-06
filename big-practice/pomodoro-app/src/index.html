@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Pomodoro</title>
+</head>
+
+<body class="pomodoro-mode">
+
+  <div class="loading-overlay center">
+    <div class="loading-wrapper">
+      <img src="./assets/icons/icon-checked.png" alt="icon checked" class="loading">
+    </div>
+    <div class="loading-text center">
+      <span class="capitalize">loading</span>
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <header class="header container">
+    <div class="header-container">
+      <a href="#" class="logo">
+        <img src="./assets/icons/icon-checked.png" alt="logo pomodoro app" class="logo-image">
+        <span class="logo-name">Pomofocus</span>
+      </a>
+
+      <button class="btn-login pointer">
+        <img src="./assets/icons/icon-user.png" alt="avatar user login" class="avatar-user-image">
+        <span class="user-login">Login</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <section class="timer container">
+      <div class="timer-container center">
+        <div class="btn-timer-wrapper center">
+          <button class="capitalize btn-timer btn-pomodoro pointer" active="true">pomodoro</button>
+          <button class="capitalize btn-timer btn-short-break pointer">short break</button>
+          <button class="capitalize btn-timer btn-long-break pointer">long break</button>
+        </div>
+
+        <div class="timer-time">
+          25:00
+        </div>
+
+        <div class="btn-action-wrappers uppercase center">
+          <button class="btn-reset-time pointer">
+            <img src="./assets/icons/icons-reset-time.png" alt="icon reset" class="icon-reset-time">
+          </button>
+
+          <button class="btn-start-time uppercase pointer">start</button>
+
+          <button class="btn-next-time pointer">
+            <img src="./assets/icons/icon-next-time.png" alt="icon next" class="icon-next-time">
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="task-selected container center">
+      <div class="task-selected-wrapper center">
+        <span class="number-pomodoro-mode pointer">
+          #<span class="number-pomodoro">1</span>
+        </span>
+        <span class="task-name-selected">Time to focus!</span>
+      </div>
+    </section>
+
+    <section class="task container">
+      <div class="heading-task">
+        <h1 class="title capitalize">tasks</h1>
+        <button class="btn-more clear-task pointer opacity">
+          <img src="./assets/icons/icon-option.png" alt="icon option" class="icon-more">
+        </button>
+      </div>
+
+      <ul class="task-list">
+      </ul>
+    </section>
+
+    <section class="add-task container">
+
+      <form class="form-add-task">
+        <div class="form-add-task-wrapper">
+          <input type="text" placeholder="What are you working on?" class="task-input">
+          <label class="info-pomodoro"><span class="actual-time">Act / </span>Est Pomodoro</label>
+          <div class="quantity-control">
+            <input type="number" class="quantity-input actual-pomodoro" min="0" step="1" value="0">
+            <span class="slash">/</span>
+            <input type="number" class="quantity-input estimate-pomodoro" min="0" step="1" value="1">
+            <button type="button" class="btn-quantity-control btn-increase opacity pointer">
+              <img src="assets/icons/caret-up.png" alt="increase est pomodoro" class="icon-quantity-control">
+            </button>
+            <button type="button" class="btn-quantity-control btn-decrease opacity pointer">
+              <img src="assets/icons/caret-down.png" alt="reduce est pomodoro" class="icon-quantity-control">
+            </button>
+          </div>
+        </div>
+
+        <div class="btn-container center">
+          <button type="button" class="btn btn-delete pointer opacity">Delete</button>
+          <div class="btn-wrapper">
+            <button type="button" class="btn btn-cancel pointer opacity">Cancel</button>
+            <button type="submit" class="btn btn-save pointer opacity">Save</button>
+          </div>
+        </div>
+      </form>
+
+      <button type="button" class="btn-add-task pointer center">
+        <img src="./assets/icons/icon-add-task.png" alt="icon add task" class="icon-add-task">
+        Add Task
+      </button>
+
+    </section>
+
+    <section class="data-aggregator container">
+      <div class="data-aggregator-container center">
+        <div class="center">
+          <p class="capitalize">pomos:</p>
+          <div class="number-data">
+            <span class="data-aggregator-pomodoro actual-pomofocus">0</span>
+            <span>/</span>
+            <span class="data-aggregator-pomodoro estimate-pomofocus">1</span>
+          </div>
+        </div>
+
+        <div class="center">
+          <span class="capitalize">finish at:</span>
+          <div class="number-data">
+            <span class="data-aggregator-pomodoro data-time">11:20</span>
+            <span class="hour-data">(1.9h)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./scripts/index.js"></script>
+</body>
+
+</html>

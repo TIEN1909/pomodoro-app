@@ -1,0 +1,20 @@
+.task-selected {
+  padding: 5px 0 20px;
+}
+
+.task-selected-wrapper {
+  flex-direction: column;
+}
+
+.number-pomodoro-mode {
+  font-size: var(--fs-medium);
+  opacity: 0.6;
+  color: var(--gainsboro-color);
+}
+
+.task-name-selected {
+  margin-top: 10px;
+  font-size: var(--fs-large);
+  color: var(--primary-text-color);
+  overflow-wrap: break-word;
+}

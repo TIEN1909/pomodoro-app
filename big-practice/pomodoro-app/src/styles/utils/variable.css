@@ -1,0 +1,43 @@
+:root {
+  /* Font */
+  --primary-font: 'Arial Rounded MT', Helvetica;
+  /* End font */
+
+  /* Sizing */
+  --fs-small: 14px;
+  --fs-medium: 16px;
+  --fs-large: 18px;
+
+  --fw-light: 300;
+  --fw-extrabold: 700;
+
+  /* End sizing */
+
+  /* Color */
+  --primary-color: #fff;
+  --secondary-color: #ba4949;
+
+  --rgb-black-color: 0, 0, 0;
+  --rgb-white-color: 255, 255, 255;
+
+  --primary-text-color: #fff;
+  --secondary-text-color: #555;
+  --gray-text-color: #bbb;
+
+  --primary-bg-color: #ba4949;
+  --secondary-bg-color: #38858a;
+  --queen-blue-bg-color: #3a7097;
+  --btn-timer-bg-color: none rgba(0, 0, 0, 0.15);
+
+  --overlay-color: rgba(255, 255, 255, 0.1);
+  --chinese-silver-color: #ccc;
+  --raisin-black-color: #222;
+  --gainsboro-color: #ddd;
+  --platinum-color: #e8e8e8;
+  --taupe-gray-color: #888;
+  --davy-grey-color: #555;
+
+  --box-shadow-color: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  --box-shadow-btn-action: rgb(235, 235, 235) 0px 6px 0px;
+  /* End color */
+}

@@ -1,0 +1,21 @@
+{
+  "name": "pomodoro-app",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "lint": "npx eslint src/scripts/*.js",
+    "lint:fix": "npx eslint --fix src/scripts/*.js"
+  },
+  "author": "Tien Thanh Vo",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^5.0.0",
+    "parcel": "^2.9.3",
+    "prettier": "^3.0.2"
+  }
+}

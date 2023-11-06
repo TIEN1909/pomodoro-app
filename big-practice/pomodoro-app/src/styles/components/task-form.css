@@ -1,0 +1,87 @@
+.form-add-task {
+  margin-top: 12px;
+  animation: expand 0.1s ease-in-out;
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(1, 0.8);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+.form-add-task-wrapper {
+  background-color: var(--primary-color);
+  padding: 26px 18px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.task-input {
+  width: 100%;
+  padding: 10px 2px;
+  font-weight: var(--fw-extrabold);
+  border: none;
+  outline: none;
+  font-size: 22px;
+  color: var(--davy-grey-color);
+}
+
+.est-pomodoro {
+  display: inline-block;
+  color: var(--secondary-text-color);
+  font-weight: var(--fw-extrabold);
+}
+
+.task-input::placeholder {
+  color: var(--gainsboro-color);
+  font-size: 22px;
+  font-style: italic;
+}
+
+.info-pomodoro {
+  display: inline-block;
+  color: var(--secondary-text-color);
+  font-weight: var(--fw-extrabold);
+  margin-top: 20px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.quantity-input {
+  max-width: 75px;
+  padding: 10px;
+  margin-right: 10px;
+  outline: none;
+  border: none;
+  background-color: var(--gainsboro-color);
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: var(--fw-extrabold);
+  color: var(--secondary-text-color);
+}
+
+.actual-pomodoro {
+  margin-right: 0;
+  color: var(--taupe-gray-color);
+}
+
+.icon-quantity-control {
+  max-width: 10px;
+  max-height: 10px;
+  opacity: 0.6;
+}
+
+.slash {
+  margin: 0 6px;
+  color: var(--taupe-gray-color);
+}

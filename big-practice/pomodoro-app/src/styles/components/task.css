@@ -1,0 +1,116 @@
+.task-item,
+.task-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.task-item {
+  justify-content: space-between;
+  padding: 15px 12px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border-left: 6px solid transparent;
+  background-color: var(--primary-color);
+}
+
+.task-item:hover {
+  border-color: var(--chinese-silver-color);
+}
+
+.task-item.focus {
+  border-color: var(--raisin-black-color);
+}
+
+.task-check {
+  width: 60%;
+}
+
+.icon-checked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: var(--gainsboro-color);
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+.icon-checked:hover {
+  opacity: 0.5;
+}
+
+.icon-checked::after {
+  content: '';
+  display: block;
+  margin-bottom: 3px;
+  width: 5px;
+  height: 11px;
+  border-style: solid;
+  border-color: var(--primary-color);
+  border-width: 0px 3px 3px 0px;
+  transform: rotate(45deg);
+}
+
+.completed .icon-checked {
+  background-color: var(--primary-bg-color);
+}
+
+.completed .task-name {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.task-name {
+  color: var(--secondary-text-color);
+  font-weight: var(--fw-extrabold);
+  width: 85%;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.task-checked {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.task-finish {
+  text-decoration: line-through;
+  color: var(--gray-text-color);
+}
+
+.task-item-done {
+  margin-right: 18px;
+  color: var(--gray-text-color);
+  font-weight: var(--fw-extrabold);
+}
+
+.task-actual {
+  font-size: 18px;
+  margin-left: 2px;
+}
+
+.task-estimate {
+  font-size: 14px;
+}
+
+.icon-more {
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.edit {
+  opacity: 0.4;
+  max-width: 18px;
+  max-height: 18px;
+}
+
+@media (min-width: 576px) {
+  .task {
+    max-width: 480px;
+  }
+
+  .task-check {
+    width: 75%;
+  }
+}
